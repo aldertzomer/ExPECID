@@ -41,13 +41,13 @@ The tool combines fast k-mer–based alignment using KMA with a trained Random F
 ## USAGE
 
 Assembly:
-```python expec_score.py -i sample.fasta -o results.tsv --threads 8```
+```python ExPECID.py -i sample.fasta -o results.tsv --threads 8```
 
 Single-end:
-```python expec_score.py -is sample.fastq.gz -o results.tsv --threads 8```
+```python ExPECID.py -is sample.fastq.gz -o results.tsv --threads 8```
 
 Paired-end:
-```python expec_score.py -ipe sample_R1.fastq.gz sample_R2.fastq.gz -o results.tsv --threads 8```
+```python ExPECID.py -ipe sample_R1.fastq.gz sample_R2.fastq.gz -o results.tsv --threads 8```
 
 ---
 
