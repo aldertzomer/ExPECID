@@ -94,7 +94,7 @@ Best hit:
 
 ---
 
-TEMP FILES
+## TEMP FILES, DEBUG
 
 Use:
 --keep-temp
@@ -110,10 +110,11 @@ Reads: seconds to minutes
 
 ## METHOD SUMMARY
 
-- ~19,000 genomes
-- Roary pangenome
-- Random Forest feature selection
-- ~80 genes
+- ~19,000 genomes ExPEC/Non-ExPEC
+- Roary pangenome / GWAS
+- Random Forest feature selection only on ExPEC associated genes
+- KMA index of ortholog alleles of 135 top marker genes
+- ~135 genes final model -> implementation uses both id% and coverage% of hits
 
 ## Performance:
 AUC ≈ 0.95
