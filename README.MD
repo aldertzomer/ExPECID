@@ -6,14 +6,14 @@ The tool combines fast k-mer–based alignment using KMA with a trained Random F
 
 ---
 
-OVERVIEW
+## OVERVIEW
 
-Input:
+### Input:
 - Genome assemblies (.fasta, .fna)
 - Single-end reads (.fastq, .fastq.gz)
 - Paired-end reads (R1/R2 fastq)
 
-Pipeline:
+### Pipeline:
 1. Mapping to marker genes using KMA
 2. Extraction of identity and coverage features
 3. Random Forest classification
@@ -21,14 +21,14 @@ Pipeline:
 
 ---
 
-INSTALLATION
+## INSTALLATION
 
-Requirements:
+### Requirements:
 - Python ≥ 3.8
 - KMA ≥ 1.3
 - pandas, joblib, scikit-learn
 
-Install:
+### Install:
 
 ```git clone https://github.com/aldertzomer/ExPECID.git```
 
@@ -38,27 +38,27 @@ Install:
 
 ---
 
-USAGE
+## USAGE
 
 Assembly:
-python expec_score.py -i sample.fasta -o results.tsv --threads 8
+```python expec_score.py -i sample.fasta -o results.tsv --threads 8```
 
 Single-end:
-python expec_score.py -is sample.fastq.gz -o results.tsv --threads 8
+```python expec_score.py -is sample.fastq.gz -o results.tsv --threads 8```
 
 Paired-end:
-python expec_score.py -ipe sample_R1.fastq.gz sample_R2.fastq.gz -o results.tsv --threads 8
+```python expec_score.py -ipe sample_R1.fastq.gz sample_R2.fastq.gz -o results.tsv --threads 8```
 
 ---
 
-MODEL SELECTION
+## MODEL SELECTION
 
 Assembly → RFC_expec_nonexpec_full_asm_v1.0.joblib
 Reads    → RFC_expec_nonexpec_full_reads_v1.0.joblib
 
 ---
 
-OUTPUT
+## OUTPUT
 
 Columns:
 isolate, p_nonexpec, p_expec, prediction, features...
@@ -73,7 +73,7 @@ Behavior:
 
 ---
 
-FEATURE GENERATION
+## FEATURE GENERATION
 
 Per gene:
 - Identity
@@ -91,27 +91,27 @@ Use:
 
 ---
 
-PERFORMANCE
+## PERFORMANCE
 
 Assembly: seconds
 Reads: seconds to minutes
 
 ---
 
-METHOD SUMMARY
+## METHOD SUMMARY
 
 - ~19,000 genomes
 - Roary pangenome
 - Random Forest feature selection
 - ~80 genes
 
-Performance:
+## Performance:
 AUC ≈ 0.95
 F1 ≈ 0.92
 
 ---
 
-APPLICATIONS
+## APPLICATIONS
 
 - High-risk clone detection
 - MLST / serotype scoring
@@ -121,7 +121,7 @@ APPLICATIONS
 
 ---
 
-NOTES
+## NOTES
 
 - Do not change feature logic without retraining
 - Uses KMA Score for selection
@@ -129,20 +129,20 @@ NOTES
 
 ---
 
-CITATION
+## CITATION
 
 Zomer A.L., de Been M., et al.
 Machine learning–based identification of extraintestinal pathogenic E. coli
 
 ---
 
-GITHUB
+## GITHUB
 
 https://github.com/aldertzomer/ExPECID
 
 ---
 
-CONTACT
+## CONTACT
 
 Aldert Zomer
 Utrecht University
