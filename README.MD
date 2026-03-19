@@ -24,8 +24,8 @@ The tool combines fast k-mer–based alignment using KMA with a trained Random F
 ## INSTALLATION
 
 ### Requirements:
-- Python ≥ 3.8
-- KMA ≥ 1.3
+- Python ≥ 3.11
+- KMA ≥ 1.4.18a
 - pandas, joblib, scikit-learn
 
 ### Install:
