@@ -41,19 +41,26 @@ The tool combines fast k-mer–based alignment using KMA with a trained Random F
 ## USAGE
 
 Assembly:
+
 ```python ExPECID.py -i sample.fasta -o results.tsv --threads 8```
 
+
 Single-end:
+
 ```python ExPECID.py -is sample.fastq.gz -o results.tsv --threads 8```
 
+
 Paired-end:
+
 ```python ExPECID.py -ipe sample_R1.fastq.gz sample_R2.fastq.gz -o results.tsv --threads 8```
+
 
 ---
 
 ## MODEL SELECTION
 
 Assembly → RFC_expec_nonexpec_full_asm_v1.0.joblib
+
 Reads    → RFC_expec_nonexpec_full_reads_v1.0.joblib
 
 ---
@@ -61,10 +68,13 @@ Reads    → RFC_expec_nonexpec_full_reads_v1.0.joblib
 ## OUTPUT
 
 Columns:
+
 isolate, p_nonexpec, p_expec, prediction, features...
 
 prediction:
+
 0 = non-ExPEC
+
 1 = ExPEC
 
 Behavior:
