@@ -57,6 +57,7 @@ Paired-end:
 
 ```python ExPECID.py -ipe sample_R1.fastq.gz sample_R2.fastq.gz -o results.tsv --threads 8```
 
+Results will get appended to results.tsv if the file already exists.
 
 ---
 
