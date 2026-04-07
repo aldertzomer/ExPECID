@@ -33,9 +33,11 @@ The tool combines fast k-mer–based alignment using KMA with a trained Random F
 
 ### Install:
 
-```git clone https://github.com/aldertzomer/ExPECID.git```
-```cd ExPECID```
-```conda create --name expecid --file spec-file.txt```
+```git clone https://github.com/aldertzomer/ExPECID.git
+
+cd ExPECID
+
+conda create --name expecid --file spec-file.txt```
 
 ---
 
