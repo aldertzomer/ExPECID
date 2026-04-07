@@ -32,9 +32,9 @@ The tool combines fast k-mer–based alignment using KMA with a trained Random F
 
 ```git clone https://github.com/aldertzomer/ExPECID.git```
 
-```pip install pandas joblib scikit-learn```
+```cd ExPECID```
 
-```conda install -c bioconda kma```
+```conda create --name expecid --file spec-file.txt```
 
 ---
 
