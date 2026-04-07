@@ -1,6 +1,9 @@
 # ExPEC-ID
+<img src="images/logo.png" alt="ExPECID logo" width="240"/> [![Try it online](https://img.shields.io/badge/Try%20it%20online-klif.uu.nl%2Fmetapointfinder-blue?style=for-the-badge)](https://klif.uu.nl/expecid)
 
-ExPEC-ID is a machine learning–based tool for predicting the pathogenic potential (“Expeciness”) of Escherichia coli from genome assemblies or sequencing reads.
+**ExPEC-ID** is a machine learning–based tool for predicting the pathogenic potential (“ExPECiness”) of Escherichia coli from genome assemblies or sequencing reads.
+
+A user-friendly **web interface** is available at [klif.uu.nl/expecid](https://klif.uu.nl/expecid).
 
 The tool combines fast k-mer–based alignment using KMA with a trained Random Forest classifier to distinguish extraintestinal pathogenic E. coli (ExPEC) from non-ExPEC.
 
