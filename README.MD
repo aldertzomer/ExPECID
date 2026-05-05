@@ -28,7 +28,7 @@ The tool combines fast k-mer–based alignment using KMA with a trained Random F
 
 ### Requirements:
 - Python ≥ 3.11
-- KMA ≥ 1.4.18a
+- KMA ≥ 1.4.18a (has presets for reads and assemblies)
 - pandas, joblib, scikit-learn
 
 ### Install:
@@ -139,8 +139,8 @@ F1 ≈ 0.92
 ## NOTES
 
 - Do not change feature logic without retraining
-- Uses KMA Score for selection
-- Requires identical preprocessing
+- Uses KMA top score for selection of best hit
+- Requires identical preprocessing (do not change KMA settings)
 
 ---
 
